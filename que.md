@@ -1,0 +1,32 @@
+- js基础知识
+    - 闭包
+    - 事件循环
+    - this，箭头函数
+    - 原型链
+- 介绍一下常用的设计模式
+    - 有没有用过继承
+- promise解决什么问题
+- 怎么debug，介绍一下啊chrome dev tool
+- 怎么理解http2多路复用，还需要将小文件打包吗
+- 组件设计考虑的点，复用技巧
+- 浏览器渲染机制
+    - 构建 DOM 树 (Document Object Model)
+    - 构建 CSSOM 树 (CSS Object Model)
+        - CSS 加载和解析会阻塞渲染
+        - JavaScript 的加载和执行也会阻塞 HTML 的解析
+    - 当 DOM 树和 CSSOM 树都构建完毕后，浏览器会将它们合并成一个渲染树 (Render Tree)。
+    - 布局 (Layout / Reflow)
+        - 渲染树构建完成后，浏览器开始计算每个渲染对象在屏幕上的确切位置和大小
+    - 绘制 (Painting)
+        - 将渲染树转换成像素
+        - (Layering)为了提高性能和方便后续的复合操作，浏览器会将页面内容分为不同的图层（Layer）。例如，使用了 position: fixed 或 transform 的元素通常会被提升到单独的图层中。
+        - (Compositing) 浏览器会将所有独立的图层，按照正确的顺序，合并成一个最终的图像。
+
+- 当用户在浏览器输入地址按回车后，到用户看到页面，背后发生了什么技术细节
+    - URL 解析与 DNS 解析 (Parsing URL & DNS Resolution)
+    - TCP 连接建立 (Establishing TCP Connection)
+    - HTTPS 加密通信 (HTTPS Encryption)
+    - 发送 HTTP 请求与接收响应 (Sending Request & Receiving Response)
+    - 浏览器渲染 (Browser Rendering)
+    - 关闭连接 (Closing Connection)
+- 遇到困难怎么解决
