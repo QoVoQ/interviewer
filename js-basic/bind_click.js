@@ -1,3 +1,4 @@
+// what's wrong
 window.addEventListener('click', () => {
   console.log('click me');
 })
