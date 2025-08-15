@@ -1,5 +1,5 @@
 // binary search
-
+// https://www.youtube.com/watch?v=JuDAqNyTG4g&t=122s
 var binarySearch = function(nums, target) {
     let left = 0, right = nums.length - 1;
     while(left <= right) {

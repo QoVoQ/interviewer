@@ -30,6 +30,7 @@
     - 发送 HTTP 请求与接收响应 (Sending Request & Receiving Response)
     - 浏览器渲染 (Browser Rendering)
     - 关闭连接 (Closing Connection)
+## DNS 递归查询
 ## 遇到困难怎么解决
 ## 什么是优雅的代码，怎是实现优雅的代码，举个具体的例子
     - 优雅的代码不仅仅是能跑起来的代码，它更是一种艺术，是开发者匠心独运的体现。我认为，优雅的代码主要具备以下几个特征：
