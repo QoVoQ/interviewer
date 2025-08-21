@@ -10,6 +10,19 @@
 // force
 // O(n^2)
 
+
+// Problem:
+
+// Given an array, find the first number to the right of each element that is larger than it. If there is none, return -1. The final result should be returned as an array.
+
+
+
+// Example：
+
+// Input: [2, 1, 2, 4, 3]
+
+// Output: [4, 2, 4, -1, -1]
+
 function findFirstBigger(arr) {
     const result = new Array(arr.length).fill(-1);
 
