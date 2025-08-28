@@ -3,8 +3,8 @@
 
 // const input = [2, 1, 2, 4, 3];
 // const input = [];
-// const input = [1, 2, 3, 4];
-// const input = [4, 3, 2, 1];
+// const input = [1, 2, 3, 4]; return [2, 3, 4, -1]
+// const input = [4, 3, 2, 1]; return [-1, -1, -1, -1]
 
 
 // force
@@ -22,6 +22,22 @@
 // Input: [2, 1, 2, 4, 3]
 
 // Output: [4, 2, 4, -1, -1]
+
+const inputs = [
+    [2, 1, 2, 4, 3],
+    [],
+    [1, 2, 3, 4],
+    [4, 3, 2, 1],
+]
+
+inputs.forEach(input => {
+    console.log(findFirstBigger(input));
+})
+
+/**
+ * @param {number[]} arr
+ * @returns {number[]}
+ */
 
 function findFirstBigger(arr) {
     const result = new Array(arr.length).fill(-1);
@@ -57,3 +73,5 @@ function findFirstBiggerStack(arr) {
 
     return result;
 }
+
+

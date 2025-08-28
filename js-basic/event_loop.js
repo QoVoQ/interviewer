@@ -18,3 +18,5 @@ new Promise((resolve) => {
 });
 
 console.log('7');
+
+// 1475236

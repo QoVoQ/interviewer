@@ -22,3 +22,24 @@ function isBalanced(str) {
   // If the stack is empty, all brackets were balanced
   return stack.length === 0;
 }
+
+
+输出描述
+
+isValid("()") // true
+
+isValid("()[]{}") // true
+
+isValid("(]") // false
+
+isValid("([)]") // false
+
+isValid("{[]}") // true
+
+备注
+
+// 运行以下代码，输出 true, true false, false, true
+
+const arr = ["()", "()[]{}", "(]", "([)]", "{[]}"];
+
+arr.forEach(s => console.log(isValid(s)));

@@ -13,3 +13,7 @@ obj.greetArrow();
 
 const greet = obj.greet;
 greet();
+
+// Hello, Alice
+// Hi,
+// Hello,

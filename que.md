@@ -23,7 +23,7 @@
         - (Layering)为了提高性能和方便后续的复合操作，浏览器会将页面内容分为不同的图层（Layer）。例如，使用了 position: fixed 或 transform 的元素通常会被提升到单独的图层中。
         - (Compositing) 浏览器会将所有独立的图层，按照正确的顺序，合并成一个最终的图像。
 
-## 当用户在浏览器输入地址按回车后，到用户看到页面，背后发生了什么技术细节
+## 节当用户在浏览器输入地址按回车后，到用户看到页面，背后发生了什么技术细
     - URL 解析与 DNS 解析 (Parsing URL & DNS Resolution)
     - TCP 连接建立 (Establishing TCP Connection)
     - HTTPS 加密通信 (HTTPS Encryption)
