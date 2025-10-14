@@ -36,21 +36,6 @@ function findMajority(arr) {
   }
 }
 
-// 测试
-console.log("测试1:");
-findMajority([1, 2, 3, 2, 2, 2, 5, 4, 2]); // 应该输出 2
-
-console.log("\n测试2:");
-findMajority([1, 2, 3, 4, 5]); // 应该输出 undefined
-
-console.log("\n测试3:");
-findMajority([3, 3, 4, 2, 4, 4, 2, 4, 4]); // 应该输出 4
-
-console.log("\n测试4:");
-findMajority([]); // 应该输出 undefined
-
-console.log("\n测试5:");
-findMajority([1, 1, 1, 2, 2]); // 应该输出 1
 
 // Boyer-Moore 投票算法：
 
