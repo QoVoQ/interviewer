@@ -121,7 +121,7 @@ const testCases = [
 
 // 运行测试
 testCases.forEach(([obj1, obj2, expected], index) => {
-  const result = enhancedDeepEqual(obj1, obj2);
+  const result = deepEqual(obj1, obj2);
   console.log(`Test ${index + 1}: ${result === expected ? 'PASS' : 'FAIL'}`);
   if (result !== expected) {
       console.log(`  Expected: ${expected}, Got: ${result}`);

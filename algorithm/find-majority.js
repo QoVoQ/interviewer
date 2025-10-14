@@ -59,3 +59,24 @@ findMajority([1, 1, 1, 2, 2]); // 应该输出 1
 // 空间复杂度：O(1)
 
 // 最优选择，适合大数据量
+
+
+const cases = [
+    { weights: [1, 2, 3, 2, 2, 2, 5, 4, 2], expected: 2 },
+    { weights: [1, 2, 3, 4, 5],  expected: undefined },
+    { weights: [3, 3, 4, 2, 4, 4, 2, 4, 4],  expected: 4 },
+    { weights: [],  expected: undefined },
+    { weights: [1, 1, 2, 2],  expected: undefined },
+    ];
+
+
+    cases.forEach((ca, idx) => {
+    const result = findMajority(ca.weights);
+
+
+    if (result === ca.expected) {
+    console.log(`case ${idx} passed`);
+    } else {
+    console.log(`case ${idx} failed, result: ${result}, expected: ${ca.expected}`);
+    }
+    });

@@ -59,3 +59,22 @@ function findMaxValue(weights, values, capacity) {
 // const values = [10, 20, 30];
 
 // const capacity = 4; // 0
+
+
+// const cases = [
+//     { weights: [1, 2, 3], values: [6, 10, 12], capacity: 4, expected: 18 },
+//     { weights: [3, 4, 5, 8], values: [1, 6, 4, 7], capacity: 8, expected: 7 },
+//     { weights: [5, 6, 7], values: [10, 20, 30], capacity: 4, expected: 0 },
+//     ];
+
+
+//     cases.forEach((ca, idx) => {
+//     const result = findMaxValue(ca.weights, ca.values, ca.capacity);
+
+
+//     if (result === ca.expected) {
+//     console.log(`case ${idx} passed`);
+//     } else {
+//     console.log(`case ${idx} failed, result: ${result}, expected: ${ca.expected}`);
+//     }
+//     });
