@@ -177,3 +177,15 @@ Vue 组件重渲染完全由**“响应式数据变化”**驱动，具体场景
 简单说：
 - React 是“我告诉你要更新（setState），我就重新渲染并对比差异”；
 - Vue 是“我监听了数据，数据变了，我就只更新用到这个数据的组件”。
+
+### English Que
+
+- How do you share state and pass data between parent and child components, and between sibling components?
+- Describe the most challenging technical problem you've encountered in a project and how you resolved it.
+- What are your most frequently used debugging tools or techniques in JavaScript
+- Describe what happens when you type a URL into the browser and press Enter. Be as detailed as possible
+- What is the fundamental problem that a bundler solves? Why can't we just use native ES modules in all browsers for a large project
+
+
+
+

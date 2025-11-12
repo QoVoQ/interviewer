@@ -1,6 +1,12 @@
 // 实现一个可以对对象深度比较的函数
+// Implement a function that can perform deep comparison of objects.
 
-function deepEqual(obj1: any, obj2: any): boolean {
+/**
+ * @param {any} obj1
+ * @param {any} obj2
+ * @returns {boolean}
+ */
+function deepEqual(obj1, obj2) {
   // 处理基本数据类型的比较
   if (obj1 === obj2) {
       return true;
@@ -86,12 +92,15 @@ const testCases = [
   [true, true, true],
   [null, null, true],
   [undefined, undefined, true],
+  [null, undefined, false],
   [42, "42", false],
 
   // 数组
   [[1, 2, 3], [1, 2, 3], true],
   [[1, 2, 3], [1, 2, 4], false],
   [[1, [2, 3]], [1, [2, 3]], true],
+  [[1, { a: 1, b: 2 }], [1,{ a: 1, b: 2 }], true],
+  [[1, { a: 1 }], [1,{ a: 1, b: 2 }], false],
 
   // 对象
   [{ a: 1, b: 2 }, { a: 1, b: 2 }, true],

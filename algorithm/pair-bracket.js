@@ -1,5 +1,19 @@
 // check whether the brackets in a string are balanced
-function isBalanced(str) {
+
+// Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+// An input string is valid if:
+
+// Open brackets must be closed by the same type of brackets.
+
+// Open brackets must be closed in the correct order.
+
+/**
+ * @param {string} str
+ * @returns {boolean}
+ */
+
+function isValid(str) {
   const stack = [];
   const brackets = {
     '(': ')',
@@ -36,10 +50,12 @@ isValid("([)]") // false
 
 isValid("{[]}") // true
 
+isValid("{[]") // false
+
 备注
 
-// 运行以下代码，输出 true, true false, false, true
+// 运行以下代码，输出 true, true false, false, false
 
-const arr = ["()", "()[]{}", "(]", "([)]", "{[]}"];
+const arr = ["()", "()[]{}", "(]", "([)]", "{[]"];
 
 arr.forEach(s => console.log(isValid(s)));
