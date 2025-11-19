@@ -1,5 +1,11 @@
 // 方法findMajority在一个实数数组中，查找是否有某个元素的数量超过数组长度的一半，如果有，将其打印出来，否则输出undefined。如：
 
+// In a number array, check if there is an element that appears more than half the length of the array. If so, print it; otherwise, output "undefined".
+
+/**
+ * @param {number[]} arr
+ * @returns {number}
+ */
 function findMajority(arr) {
   if (arr.length === 0) {
       console.log('undefined');

@@ -1,45 +1,23 @@
 好的，那我来给你设计一道**大厂前端校招编程题**，重点考核应届生对**设计模式**的理解，同时确保题目有一定编程实现性，而不是只考理论。
 
----
+实现一个事件总线（Event Bus), 支持以下功能：
 
-## **题目：实现一个事件总线（Event Bus）**
+1. 订阅事件,注册事件处理函数，可以有多个处理函数订阅同一个事件。
 
-**要求**：
-实现一个 `EventBus` 类，支持以下功能：
+on(eventName: string, handler: Function): void
 
-1. **订阅事件**
 
-   ```js
-   on(eventName: string, handler: Function): void
-   ```
+2. 取消订阅, 移除某个事件的指定处理函数。
 
-   注册事件处理函数，可以有多个处理函数订阅同一个事件。
+off(eventName: string, handler: Function): void
 
-2. **取消订阅**
+3. 触发事件,按订阅顺序执行所有处理函数，参数透传。
 
-   ```js
-   off(eventName: string, handler: Function): void
-   ```
+emit(eventName: string, ...args: any[]): void
 
-   移除某个事件的指定处理函数。
+4. 一次性订阅,处理函数只会被执行一次，执行完后自动移除。
 
-3. **触发事件**
-
-   ```js
-   emit(eventName: string, ...args: any[]): void
-   ```
-
-   按订阅顺序执行所有处理函数，参数透传。
-
-4. **一次性订阅**
-
-   ```js
-   once(eventName: string, handler: Function): void
-   ```
-
-   处理函数只会被执行一次，执行完后自动移除。
-
----
+once(eventName: string, handler: Function): void
 
 ### **示例：**
 
