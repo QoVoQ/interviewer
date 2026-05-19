@@ -44,3 +44,8 @@ greetArrow();
 // Hello, John
 // Hi, John
 // Throw error, in class, use strict mode by default, this is undefined, to fix greet.call(john)
+
+
+
+
+
